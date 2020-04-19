@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Mlies Misc Modifications</name>
+  <packageId>Mlie.MliesMiscModifications</packageId>
+	<author>Mlie</author>
+	<url>https://github.com/emipa606/MliesMiscModifications</url>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies />
+	<loadAfter>
+		<li>Nif.VanillaFences</li>
+		<li>Nif.ArchitectExpanded.Fences</li>
+		<li>Mlie.TemperatureGauge</li>
+	</loadAfter>
+	<description>Various modifications I like when I play, aimed for making the game a little more realistic.
+
+Support-chat:
+https://discord.gg/SuhwVpM
+
+Non-steam version:
+https://github.com/emipa606/MliesMiscModifications
+	
+Modifications:
+
+VanillaFences and ArchitectExpanded-Fences
+	- Chainlink fence now requires Machining instead of smithing
+
+TemperatureGauge
+	- Both TemperatureGauges requires Basic Electronics
+	
+	</description>
+</ModMetaData>
