@@ -1,40 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
- <!--================================ patches for temp gauge ======================================-->
- 
- 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "TemperatureGauge"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TemperatureGauge"]</xpath>
-				<value>
-					<researchPrerequisites>
-						<li>MicroelectronicsBasics</li>
-					</researchPrerequisites>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
- 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "TemperatureGaugeWall"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TemperatureGaugeWall"]</xpath>
-				<value>
-					<researchPrerequisites>
-						<li>MicroelectronicsBasics</li>
-					</researchPrerequisites>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
+  <!--================================ patches for temp gauge ======================================-->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName = "TemperatureGauge"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "TemperatureGauge"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+          </researchPrerequisites>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName = "TemperatureGaugeWall"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "TemperatureGaugeWall"]</xpath>
+        <value>
+          <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+          </researchPrerequisites>
+        </value>
+      </li>
+    </operations>
+  </Operation>
 </Patch>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="LampBase"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="LampBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory>Lights</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

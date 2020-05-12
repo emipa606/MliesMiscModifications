@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="Anon2FurnitureBase" or @Name="Anon2NoCompQualityFurnitureBase"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="Anon2FurnitureBase" or @Name="Anon2NoCompQualityFurnitureBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory>AOMorefurniture</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="Anon2SquarePlantPot"  or defName="Anon2CounterAFull" or defName="Anon2CounterA" or defName="Anon2TableTiny" or defName="Anon2PlantSpot" or @Name="Anon2TableQualitySurfaceBase" or defName="Anon2CouchCornerInv" or defName="Anon2CouchCorner" or defName="Anon2CouchLeft" or defName="Anon2CouchCenter" or defName="Anon2CouchRight" or defName="Anon2CushionedChair" or defName="Anon2SquareDiningChair" or defName="Anon2Dresser" or defName="Anon2EndTable" or defName="Anon2RoyalEndTable" or @Name="ANON2StandingLampBase" or defName="Anon2EndTableLight" or defName="Anon2RoyalEndTableLight"]</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Anon2SquarePlantPot"  or defName="Anon2CounterAFull" or defName="Anon2CounterA" or defName="Anon2TableTiny" or defName="Anon2PlantSpot" or @Name="Anon2TableQualitySurfaceBase" or defName="Anon2CouchCornerInv" or defName="Anon2CouchCorner" or defName="Anon2CouchLeft" or defName="Anon2CouchCenter" or defName="Anon2CouchRight" or defName="Anon2CushionedChair" or defName="Anon2SquareDiningChair" or defName="Anon2Dresser" or defName="Anon2EndTable" or defName="Anon2RoyalEndTable" or @Name="ANON2StandingLampBase" or defName="Anon2EndTableLight" or defName="Anon2RoyalEndTableLight"]/designationCategory</xpath>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="Anon2LampBase"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="Anon2LampBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory>Lights</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="Anon2FileCabinet"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Anon2FileCabinet"]/designationCategory</xpath>
+        <value>
+          <designationCategory>Misc</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/DesignationCategoryDef[defName="ANON2MF"]</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>/Defs/DesignationCategoryDef[defName="ANON2MF"]</xpath>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="SadjuukPaintBaseA" or @Name="SadjuukPaintBaseB" or @Name="SadjuukPaintBaseC"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="SadjuukPaintBaseA" or @Name="SadjuukPaintBaseB" or @Name="SadjuukPaintBaseC"]/designationCategory</xpath>
+        <value>
+          <designationCategory>Floors</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/TerrainDef[@Name="SadjuukFloorBase"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/TerrainDef[@Name="SadjuukFloorBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory>Floors</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="SadjuukDoorBase" or @Name="SadjuukWallBase"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="SadjuukDoorBase" or @Name="SadjuukWallBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory>Structure</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/DesignationCategoryDef[defName="SadjuukUN-Building"]</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>/Defs/DesignationCategoryDef[defName="SadjuukUN-Building"]</xpath>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

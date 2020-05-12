@@ -1,19 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Mlies Misc Modifications</name>
   <packageId>Mlie.MliesMiscModifications</packageId>
-	<author>Mlie</author>
-	<url>https://github.com/emipa606/MliesMiscModifications</url>
-	<supportedVersions>
-		<li>1.1</li>
-	</supportedVersions>
-	<modDependencies />
-	<loadAfter>
-		<li>Nif.VanillaFences</li>
-		<li>Nif.ArchitectExpanded.Fences</li>
-		<li>Mlie.TemperatureGauge</li>
-	</loadAfter>
-	<description>Various modifications I like when I play, aimed for making the game a little more realistic.
+  <author>Mlie</author>
+  <url>https://github.com/emipa606/MliesMiscModifications</url>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter>
+    <li>Nif.VanillaFences</li>
+    <li>Nif.ArchitectExpanded.Fences</li>
+    <li>Mlie.TemperatureGauge</li>
+    <li>Mlie.UNColony</li>
+    <li>Mlie.UNFurniture</li>
+    <li>spoonshortage.rimkea</li>
+    <li>VanillaExpanded.VFECore</li>
+    <li>wofl.MoreFurnitureUpdated</li>
+    <li>Skullywag.ExtendedStorage</li>
+    <li>Mlie.AsSimpleAsARack</li>
+  </loadAfter>
+  <description>Various modifications I like when I play, aimed for making the game a little more realistic.
 
 Support-chat:
 https://discord.gg/SuhwVpM
@@ -23,11 +30,29 @@ https://github.com/emipa606/MliesMiscModifications
 	
 Modifications:
 
+Adds a Light-tab and movs vanilla lights to it
+
 VanillaFences and ArchitectExpanded-Fences
 	- Chainlink fence now requires Machining instead of smithing
 
 TemperatureGauge
 	- Both TemperatureGauges requires Basic Electronics
+	
+UN-Colony
+	- Moves walls/doors to Structure-tab and floors to Floors-tab
+	
+UN-Furniture
+	- Moves furniture to Furniture-tab, temp-stuff to Temperature-tab, addons to Misc-tab,  and lights to Lights-tab
+	
+Vanilla Furniture Expanded
+	- Moves lights to Lights-tab
+	
+More Furniture
+	- Moves furniture to Vanilla Furniture Expanded-tab and lights to Lights tab
+
+As Simple As a Rack
+	- Moves racks to Extended Storage-tab
+	
 	
 	</description>
 </ModMetaData>
