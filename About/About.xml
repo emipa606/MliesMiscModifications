@@ -32,6 +32,8 @@ Modifications:
 
 Adds a Light-tab and movs vanilla lights to it
 
+Removes siege as allowed attack from all factions
+
 VanillaFences and ArchitectExpanded-Fences
 	- Chainlink fence now requires Machining instead of smithing
 
