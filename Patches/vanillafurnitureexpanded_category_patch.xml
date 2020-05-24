@@ -4,11 +4,41 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="Light_Streetlamp" or defName="Light_ModernLamp"]</xpath>
+        <xpath>/Defs/ThingDef[defName="Light_Streetlamp" or defName="Light_ModernLamp" or defName="Light_SpacerLamp" or defName="Spacer_OutdoorLamp"]</xpath>
       </li>
       <li Class="PatchOperationRemove">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Light_Streetlamp" or defName="Light_ModernLamp"]/designationCategory</xpath>
+        <xpath>/Defs/ThingDef[defName="Light_Streetlamp" or defName="Light_ModernLamp" or defName="Light_SpacerLamp" or defName="Spacer_OutdoorLamp"]/designationCategory</xpath>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="Spacer_SunLamp"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Spacer_SunLamp"]/designationCategory</xpath>
+        <value>
+          <designationCategory>GardenTools</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="Shelf_1x1c" or defName="Shelf_WeaponRack"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Shelf_1x1c" or defName="Shelf_WeaponRack"]/designationCategory</xpath>
+        <value>
+          <designationCategory>FurnitureStorage</designationCategory>
+        </value>
       </li>
     </operations>
   </Operation>

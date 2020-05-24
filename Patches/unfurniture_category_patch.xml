@@ -25,7 +25,7 @@
         <success>Always</success>
         <xpath>/Defs/ThingDef[@Name="SadjuukCarpetBase" or @Name="SadjuukSurgeryBaseB" or @Name="SadjuukTableBase"  or @Name="SadjuukChairBase"  or @Name="SadjuukBedBaseA" or @Name="SadjuukBedBaseB"  or @Name="SadjuukFurnitureBaseA" or @Name="SadjuukFurnitureBaseB"]/designationCategory</xpath>
         <value>
-          <designationCategory>Furniture</designationCategory>
+          <designationCategory>AOMorefurniture</designationCategory>
         </value>
       </li>
     </operations>

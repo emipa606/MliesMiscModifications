@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="ZEN_Tachidoro" or defName="ZEN_Andon"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="ZEN_Tachidoro" or defName="ZEN_Andon"]</xpath>
+        <value>
+          <designationCategory Inherit="False">Lights</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="Zen_HalfWallParent"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="Zen_HalfWallParent"]</xpath>
+        <value>
+          <designationCategory Inherit="False">Fences</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
