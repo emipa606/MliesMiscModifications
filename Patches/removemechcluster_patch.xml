@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/IncidentDef[defName = "MechCluster"]/baseChance</xpath>
+        <value>
+          <baseChance>0.0</baseChance>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/IncidentDef[defName = "MechCluster"]/baseChanceWithRoyalty</xpath>
+        <value>
+          <baseChanceWithRoyalty>0.0</baseChanceWithRoyalty>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

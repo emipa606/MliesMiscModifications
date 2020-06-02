@@ -6,11 +6,11 @@
       <li Class="PatchOperationTest">
         <xpath>/Defs/ThingDef[defName="PRF_WallLight" or defName="PRF_IndustrialLamp"]</xpath>
       </li>
-      <li Class="PatchOperationAdd">
+      <li Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>/Defs/ThingDef[defName="PRF_WallLight" or defName="PRF_IndustrialLamp"]</xpath>
         <value>
-          <designationCategory Inherit="False">Lights</designationCategory>
+          <designationCategory>Lights</designationCategory>
         </value>
       </li>
     </operations>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RePower.RePowerDef>
+    <!-- CellFabricator -->
+    <defName>RePowerCellFabricator</defName>
+    <targetDef>CellFabricator</targetDef>
+    <lowPower>-10</lowPower>
+    <highPower>-5000</highPower>
+    <poweredWorkbench>true</poweredWorkbench>
+    <poweredReservable>false</poweredReservable>
+  </RePower.RePowerDef>
+</Defs>

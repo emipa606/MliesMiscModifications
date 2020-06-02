@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="CP_OfficeLampBase" or @Name="CP_FloodlightBase" or defName="CP_AmmoCrateTable1x2c" or defName="CP_PlanningTable1x2c"]</xpath>
+      </li>
+      <li Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="CP_OfficeLampBase" or @Name="CP_FloodlightBase" or defName="CP_AmmoCrateTable1x2c" or defName="CP_PlanningTable1x2c"]/designationCategory</xpath>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="CP_BuildingBase" or @Name="RedHorse_FurnitureBase"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[@Name="CP_BuildingBase" or @Name="RedHorse_FurnitureBase"]/designationCategory</xpath>
+        <value>
+          <designationCategory>AOMorefurniture</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="CP_Locker" or defName="CP_Lockers" or defName="CP_MilitaryCrate"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="CP_Locker" or defName="CP_Lockers" or defName="CP_MilitaryCrate"]</xpath>
+        <value>
+          <designationCategory Inherit="False">FurnitureStorage</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[defName="RedHorse_TacticoolRefrigerator"]</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="RedHorse_TacticoolRefrigerator"]/designationCategory</xpath>
+        <value>
+          <designationCategory Inherit="False">FurnitureStorage</designationCategory>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/IncidentDef[defName = "Infestation"]/baseChance</xpath>
+    <value>
+      <baseChance>0</baseChance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/IncidentDef[defName = "Infestation"]/minRefireDays</xpath>
+    <value>
+      <minRefireDays>100000</minRefireDays>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/IncidentDef[defName = "Infestation"]/minThreatPoints</xpath>
+    <value>
+      <minThreatPoints>100000</minThreatPoints>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/IncidentDef[defName = "Infestation"]/minThreatPoints</xpath>
+    <value>
+      <earliestDay>100000</earliestDay>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/IncidentDef[defName = "DeepDrillInfestation"]/baseChance</xpath>
+    <value>
+      <baseChance>0</baseChance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/IncidentDef[defName = "DeepDrillInfestation"]/baseChance</xpath>
+    <value>
+      <minRefireDays>100000</minRefireDays>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/IncidentDef[defName = "DeepDrillInfestation"]/baseChance</xpath>
+    <value>
+      <minThreatPoints>100000</minThreatPoints>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/IncidentDef[defName = "DeepDrillInfestation"]/baseChance</xpath>
+    <value>
+      <earliestDay>100000</earliestDay>
+    </value>
+  </Operation>
+</Patch>
