@@ -4,8 +4,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="MilitaryTurretGunManned" or defName="MilitaryTurretGun"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="MilitaryTurretGunManned" or defName="MilitaryTurretGun"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -37,8 +36,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="ShredderTurretGunManned" or defName="ShredderTurretGun"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="ShredderTurretGunManned" or defName="ShredderTurretGun"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -70,8 +68,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="PrecisionTurretGunManned" or defName="PrecisionTurretGun"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="PrecisionTurretGunManned" or defName="PrecisionTurretGun"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -103,8 +100,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="BlastTurretGunManned" or defName="BlastTurretGun"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="BlastTurretGunManned" or defName="BlastTurretGun"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -136,8 +132,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="VulcanCannonManned" or defName="VulcanCannon"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="VulcanCannonManned" or defName="VulcanCannon"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -169,8 +164,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="GunComplex"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="GunComplex"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -194,8 +188,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="RocketComplex"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="RocketComplex"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -219,8 +212,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="Turret_DevastatorMortarBomb"]/uiIconPath</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="Turret_DevastatorMortarBomb"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
@@ -442,8 +434,7 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationTest">
-        <xpath>/Defs/ThingDef[defName="Artillery_DevastatorBomb"]/building</xpath>
-        <success>Invert</success>
+        <xpath>/Defs/ThingDef[defName="Artillery_DevastatorBomb"]</xpath>
       </li>
       <li Class="PatchOperationAdd">
         <success>Always</success>
