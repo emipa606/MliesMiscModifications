@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]</xpath>
+      <value>
+        <comps>
+          <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+              <li>ToolCabinet</li>
+              <li>EndTable</li>
+            </linkableFacilities>
+          </li>
+        </comps>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps</xpath>
+      <value>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>ToolCabinet</li>
+            <li>EndTable</li>
+          </linkableFacilities>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "ElectricStove" or defName = "FueledStove"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+          <li>EndTable</li>
+        </linkableFacilities>
+      </li>
+    </value>
+  </Operation>
+</Patch>

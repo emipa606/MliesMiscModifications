@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "DiningChair" or defName = "Stool"]</xpath>
+    <value>
+      <comps>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>EndTable</li>
+          </linkableFacilities>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+</Patch>

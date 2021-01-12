@@ -22,7 +22,7 @@
     <li>Mlie.AsSimpleAsARack</li>
     <li>paradox.morevanillaturrets</li>
   </loadAfter>
-  <description>Various modifications I like when I play, aimed for making the game a little more realistic.
+  <description>Various modifications I like when I play.
 
 Support-chat:
 https://invite.gg/Mlie
@@ -32,9 +32,9 @@ https://github.com/emipa606/MliesMiscModifications
 	
 Modifications:
 
-Adds a Light-tab and movs vanilla lights to it
-
 Removes siege as allowed attack from all factions
+
+Adds a Light-tab and movs vanilla lights to it
 
 VanillaFences and ArchitectExpanded-Fences
 	- Chainlink fence now requires Machining instead of smithing
